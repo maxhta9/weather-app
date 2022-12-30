@@ -4,14 +4,10 @@ import ButtonComponent from "../components/button.component";
 import CompanyLogo from "../assets/logo.png";
 
 export const NavigationBar = () => {
-  const [contador, setcontador] = useState<number>(0);
-
   return (
-    <div className="flex flex-col w-20 h-full bg-gray-50">
-      <div>
-        <img src={CompanyLogo} className="h-10"/>
-      </div>
-      <div className="flex flex-col justify-center gap-6">
+    <div className="flex flex-col w-16 h-screen grow bg-gray-50">
+      <div></div>
+      <div className="flex flex-col place-self-center gap-6">
         <ButtonComponent>
           <CloudSVG classname="fill-gray-500 h-6" title={false} />
         </ButtonComponent>
@@ -28,7 +24,7 @@ export const NavigationBar = () => {
           <CloudSVG classname="fill-gray-500 h-6" title={false} />
         </ButtonComponent>
       </div>
-      <div className="place-items-end">
+      <div className="flex h-full place-self-center items-end mb-4">
         <ButtonComponent>
           <CloudSVG classname="fill-gray-500 h-6" title={false} />
         </ButtonComponent>

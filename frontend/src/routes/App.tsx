@@ -7,7 +7,7 @@ import logo from './logo.svg';
 
 function App() {
   return (
-    <div className='flex h-screen w-screen bg-slate-100'>
+    <div className='flex h-screen w-screen bg-gray-50'>
       <NavigationBar/>
       <MainPage/>
       <SideBar/>
