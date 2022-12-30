@@ -6,9 +6,9 @@ interface props {
 export const DisplayDataComponent = ({ title, content, classname }: props) => {
   return (
     <div className="flex flex-col w-3/12">
-      <div className={`${classname} p-4 rounded-xl shadow-lg`}>
+      <div className={`${classname} text-center p-4 rounded-xl shadow-lg`}>
         <p className="text-sm">{title}</p>
-        <p>{content}</p>
+        <p className="font-bold">{content}</p>
       </div>
     </div>
   );
